@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for f in /home/cdac/Documents/{101..102}/Slot" "[A-M];
+do
+	cd "$f"
+	var1=`sudo ls -l   | awk -F" " '{print $9 }' | 
+#	unzip -o $var2
+
+	for c in /home/cdac/Documents/{111.302}/Slot" "[A-M]
+	do
+		cd "$c"
+		var3=`sudo ls -l   | awk -F" " '{print $9 }' | grep -E  'C'`
+#		sleep 1
+		unzip -o $var3
+	done
+
+
+done
